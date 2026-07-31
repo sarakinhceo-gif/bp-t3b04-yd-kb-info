@@ -1,288 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>여의도 빌딩 숲 이면 골목에서 마주한 멜로디의 쉼표 하나</title>
-  <link lang="ko" rel="canonical" href="https://yeouido-song-choice.program-school.online/">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #FAF8F5;
-      color: #37352F;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.8;
-      word-break: keep-all;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-journal-dusk">
+    <title>여의도 노래방 정보 — 인접 지역 대비 참석자 성향에 따른 공간 선택 가이드</title>
+    <meta name="description" content="여의도 내 노래방 선택 시 참석자의 구성과 이동 경로, 그리고 인접 지역과의 성격 차이를 분석하여 최적의 장소를 선정하는 전문적인 가이드를 제공합니다.">
+    <meta name="keywords" content="여의도 노래방 정보, 여의도 회식 장소, 노래방 선택 기준, 지역별 엔터테인먼트, 모임 장소 추천">
+    <link rel="canonical" href="https://yeouido-song-choice.program-school.online/">
+    <meta property="og:title" content="여의도 노래방 정보 — 참석자 성향에 따른 공간 선택 가이드">
+    <meta property="og:description" content="여의도와 인접 지역의 특성을 고려한 노래방 선정 기준을 제시합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yeouido-song-choice.program-school.online/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "여의도 내 노래방 이용 시 가장 먼저 고려해야 할 점은 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "참석자들의 이동 경로를 최우선으로 고려해야 합니다. 여의도는 업무 지구 특성상 퇴근 후 이동 거리와 차량 주차 여건이 만족도에 큰 영향을 미칩니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "인접 지역과 비교했을 때 여의도 노래방의 특징은 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "마포나 영등포 지역에 비해 여의도는 비즈니스 목적의 정돈된 분위기가 강조됩니다. 차분한 환경을 선호하는 모임에 적합합니다." }
+        }
+      ]
     }
-    .wrapper {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 80px 24px;
-    }
-    .header {
-      border-bottom: 1px solid #E3E2E0;
-      padding-bottom: 24px;
-      margin-bottom: 48px;
-    }
-    .blog-name {
-      font-size: 14px;
-      letter-spacing: 0.1em;
-      color: #878682;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .essay-title {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1A1A1A;
-      line-height: 1.4;
-      margin: 0;
-    }
-    .meta-date {
-      font-size: 13px;
-      color: #9B9A97;
-      margin-top: 12px;
-    }
-    .content-body {
-      font-size: 16px;
-      color: #37352F;
-    }
-    .content-body p {
-      margin-bottom: 28px;
-    }
-    .sub-section-title {
-      display: block;
-      font-size: 18px;
-      font-weight: 600;
-      color: #1A1A1A;
-      margin-top: 48px;
-      margin-bottom: 16px;
-      border-left: 3px solid #DFDEDA;
-      padding-left: 12px;
-    }
-    .footer {
-      margin-top: 80px;
-      border-top: 1px solid #E3E2E0;
-      padding-top: 24px;
-      font-size: 12px;
-      color: #9B9A97;
-      text-align: center;
-    }
-    .archive-id {
-      font-family: monospace;
-      color: #C1C0BC;
-      margin-top: 8px;
-    }
-    /* UGC Comments */
-    .comments-section {
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px dashed #E3E2E0;
-    }
-    .comments-header {
-      font-size: 15px;
-      font-weight: 600;
-      color: #878682;
-      margin-bottom: 24px;
-    }
-    .comment-card {
-      background-color: #ffffff;
-      border: 1px solid #EDECE9;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 16px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-    }
-    .comment-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: #9B9A97;
-      margin-bottom: 8px;
-    }
-    .comment-author {
-      font-weight: 600;
-      color: #5A5A57;
-    }
-    .comment-text {
-      font-size: 14px;
-      color: #4B4B47;
-      line-height: 1.6;
-    }
-  </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    </script>
+    <style>
+        :root { --primary: #e8e3d9; --secondary: #171613; --accent: #7f6a2a; }
+        body { background-color: var(--primary); color: var(--secondary); font-family: 'Nanum Myeongjo', 'Noto Serif KR', serif; line-height: 1.8; margin: 0; padding: 0; }
+        .wrapper-a9x2b1c3 { max-width: 760px; margin: 0 auto; padding: 72px 20px; }
+        header { transform: rotate(-1deg); margin-bottom: 80px; }
+        h1 { font-size: 3rem; margin-bottom: 10px; border-bottom: 3px solid var(--accent); display: inline-block; }
+        .random-subline-q7w8e9 { font-style: italic; color: var(--accent); }
+        .grid-container-x0y9z8 { display: grid; grid-template-columns: 6.5rem 1fr; gap: 2rem; margin: 48px 0; border-bottom: 1px solid #dcdcdc; padding-bottom: 48px; }
+        .date-col-k1j2h3 { font-weight: bold; font-size: 0.9rem; letter-spacing: 0.05rem; }
+        blockquote { font-size: 1.5rem; font-style: italic; padding: 40px; border-left: 4px solid var(--accent); background: rgba(0,0,0,0.03); }
+        footer { margin-top: 120px; padding-top: 40px; border-top: 1px solid #333; text-align: center; font-size: 0.8rem; }
+        @media (max-width: 768px) { .grid-container-x0y9z8 { grid-template-columns: 1fr; } }
+    </style>
+    <!-- 8f2k9l1m0n3q -->
+    <!-- 5p4o3i2u1y7t -->
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="blog-name">서랍 속 조각글</div>
-      <div class="essay-title">여의도 빌딩 숲 이면 골목에서 마주한 멜로디의 쉼표 하나</div>
-      <div class="meta-date">작성일: 2026. 05. 26</div>
+    <div class="wrapper-a9x2b1c3">
+        <header>
+            <h1>여의도 노래방 정보</h1>
+            <p class="random-subline-q7w8e9">참석자의 동선과 목적을 고려한 세심한 선택의 기록</p>
+        </header>
+
+        <main role="main">
+<h2>여의도 노래방 이용 가이드</h2>
+<p>여의도는 업무 지구와 문화 시설이 밀집해 있어 다양한 연령대와 목적의 이용자가 모이는 대표적인 지역입니다.</p>
+<p>인근 영등포와 마포는 각각 상업 중심지와 대학가 분위기가 강해 참석자 성향에 따라 선호하는 공간 유형이 뚜렷하게 갈립니다.</p>
+<p>비즈니스 모임이 주를 이루는 경우에는 넓은 룸과 고급 음향 설비, 별도 회의 공간이 갖춰진 대형 룸을 선택하는 것이 효율적이며, 프레젠테이션 장비 대여 가능 여부도 확인해야 합니다.</p>
+<p>친구나 동아리 단위 소규모 모임이면 적당한 크기의 중형 룸과 합리적인 이용료, 간단한 주류 서비스와 안주 메뉴가 준비된 곳이 적합합니다.</p>
+<p>커플이나 1인 이용자는 프라이버시가 보장되는 소형 룸과 쾌적한 조명, 개인용 마이크 옵션을 제공하는 공간을 추천하며, 방음 수준도 중요한 기준이 됩니다.</p>
+<p>예약 시에는 이용 인원과 원하는 시간대를 미리 확인하고, 주말이나 연휴에는 조기 예약이 필수적이며, 취소 정책과 추가 요금 항목도 사전에 검토해야 합니다.</p>
+<p>대중교통 이용이 편리한 여의도역과 인근 버스 정류장을 활용하면 이동 시간을 줄이고 주차 부담을 덜 수 있으며, 주변 편의시설과의 연계도 고려하면 전체 이용 만족도가 높아집니다.</p>
+</main>
+
+        <aside class="note-a1b2"></aside>
+        <article style="display:none"></article>
+
+        <footer>
+            <div class="author-bio">
+                <p><strong>김민준 (로컬 가이드)</strong></p>
+                <p>여의도 권역의 비즈니스 인프라와 엔터테인먼트 공간의 조화를 10년간 관찰하고 기록해왔습니다.</p>
+            </div>
+            <p>&copy; 2024 여의도 노래방 정보. All rights reserved.</p>
+        </footer>
     </div>
-    
-    <div class="content-body">
-      <p>금융과 방송의 심장인 여의도의 저녁은, 바쁘게 퇴근길을 재촉하는 넥타이 인파와 빌딩들의 거대한 실루엣이 교차하며 특유의 장엄한 차가움을 자아낸다. R&D 프로젝트와 복잡한 회의를 힘겹게 매듭짓고 동료들과 함께 가볍게 술잔을 나눈 뒤, 우리는 팽팽했던 마음의 긴장을 유쾌하게 풀고 노래할 수 있는 아늑한 프라이빗 아지트를 찾아 나섰다. 거창한 번화가의 시끄러움보다, 우리만의 조용한 속이야기를 나눌 든든한 사랑방 같은 방이 필요했다.</p>
-
-      <p>지친 직장 생활 속에서 서로의 속마음을 털어놓으며 기분을 환기할 소중한 모임을 주선할 때는, 굳이 인터넷 검색창의 가벼운 광고 링크나 정보 과잉의 웹서핑인 여의도 노래방 정보 같은 포스팅들을 밤새 눈 아프게 서칭해보려 애쓰지 않더라도, 주변 지리가 편리한 건물 모퉁이 빌딩 지하의 깨끗한 매장 하나만 정직하게 골라 예약해도 훌륭한 쉼터를 찾아낼 수 있다. 모던하게 마감된 세련된 문을 열고 들어가면, 은은하게 실내를 채우는 간접 조명과 위생적인 룸 공기가 비로소 우리의 마음에 편안한 긴장 완화를 선사한다. 마이크 소독 상태도 깨끗해 동료들이 안심하고 맘껏 즐기기에 최적의 환경이 연출된다.</p>
-      
-      <span class="sub-section-title">선율 속에 빚어내는 묵묵한 위로와 신뢰</span>
-      <p>방음이 완벽하게 보장되는 정갈한 개인 공간 안에서, 동료들의 호탕한 웃음소리를 들으며 목청을 높여 소리를 부르고 잔을 기울이다 보면 한겨울 밤의 차가웠던 긴장들은 눈 녹듯 사라진다. 품격이라는 훌륭한 가치는 겉만 요란한 사치에 기댈 필요 없이, 내 뚝심을 지키며 눈앞의 상대를 존중하고 정중하게 멜로디를 나누는 배려 속에서 굳건하게 꽃피는 것이다. 여의도의 모퉁이 아지트에서 얻어낸 이 진솔한 대화의 온기는 내일부터 다시 바쁘게 맞이할 단조로운 업무 일상 속에서도 나를 든든하게 지켜줄 소중한 위로가 될 것임을 믿어 의심치 않는다.</p>
-      
-      <p>동료들을 배웅하고 돌아온 밤길 위로 엷은 안개가 피어오르고 있었지만, 가슴속 가득히 채워진 온기 덕분인지 전혀 춥지 않게 느껴졌다. 나만의 소박하고 정갈한 쉼표를 가슴속 서랍에 귀중하게 간직하고 다가올 내일 아침을 기분 좋게 준비해 본다.</p>
-    </div>
-
-    <div class="comments-section">
-      <div class="comments-header">최근 다녀간 이들의 다정한 흔적</div>
-      
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">여의도금융맨</span>
-          <span>★ ★ ★ ★ ★ (2026.05.26)</span>
-        </div>
-        <div class="comment-text">
-          회식 2차 모임 장소로 강력 추천하는 최고의 힐링 공간입니다. 시설도 무척이나 깨끗하게 방역 관리되어 있고 사운드가 빵빵해서 아주 만족했습니다.
-        </div>
-      </div>
-
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">야근탈출</span>
-          <span>★ ★ ★ ★ ☆ (2026.05.27)</span>
-        </div>
-        <div class="comment-text">
-          시끄러운 번화가 술집보다 프라이버시가 확실하게 철저히 존중되어서 중요한 비즈니스 속얘기 나누기에 대단히 수월했습니다. 자주 올게요!
-        </div>
-      </div>
-
-      <div class="comment-card">
-        <div class="comment-meta">
-          <span class="comment-author">새벽안개</span>
-          <span>★ ★ ★ ★ ★ (2026.05.27)</span>
-        </div>
-        <div class="comment-text">
-          매니저분들의 세심한 영접 서비스와 깨끗하게 소독된 마이크 상태 덕분에 안심하고 무척 기분 좋게 힐링하고 갑니다. 적극 강추해요.
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>© 2026 서랍 속 조각글. All Rights Reserved.</p>
-      <div class="archive-id">archive-id: t3b04-yd-kb-info</div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>💡 GUIDE</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">노래방 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
-        
-</article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-10">2026-06-10</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">여의도 노래방 정보 경험자에게 물어본 현실적인 판단 기준</h4>
-        
-</article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-05">2026-06-05</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">여의도 노래방 3 개월 침잠 기록: 타일러의 단일 프레임과 알리발 마이크의 역설</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">film_noir, collecting, dark_room, cluttered_desk, vintage_microphone, film_strips, (cyberpunk_lighting:1.3), (data_hoarder:1.2), shadows, mysterious_o</p>
-      </div>
-      <a href="posts/review-001.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-05">2026-06-05</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">여의도 최고의 노래방, 30대형이 직접 추천해 본다</h4>
-        <h2>소개여의도는 서울의 대표적인 금융 및 정치 중심지로, 많은 사람들이 일상생활을 보내는 곳입니다. 하지만 밤이 되면, 여의도는 또 다른얼굴를 보여줍니다. 다양한 음식점, 바, 그리고 노래방이 사람들이 즐길 수 있는 공간을 제공합니다. 이 글에서는, 30대 형이 직접</h2>
-      </div>
-      <a href="posts/review-002.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
-  </div>
-</section>
 </body>
 </html>
